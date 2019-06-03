@@ -156,9 +156,7 @@ start:
         ret = AMQP_STATUS_SOCKET_ERROR;
     }
   } else if (0 == ret) {
-    //ret = AMQP_STATUS_CONNECTION_CLOSED;
-    self->internal_error = 0;
-    std::cout << " ----> ret is zero <----" << std::endl;
+    ret = AMQP_STATUS_CONNECTION_CLOSED;
   }
 
   return ret;
