@@ -157,7 +157,8 @@ start:
     }
   } else if (0 == ret) {
     //ret = AMQP_STATUS_CONNECTION_CLOSED;
-    self->internal_error = 0;
+    //self->internal_error = 0;
+    ret = AMQP_STATUS_OK
   }
 
   return ret;
