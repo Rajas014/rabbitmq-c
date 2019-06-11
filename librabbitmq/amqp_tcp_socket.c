@@ -157,9 +157,7 @@ start:
         ret = AMQP_STATUS_SOCKET_ERROR;
     }
   } else if (0 == ret) {
-    //ret = AMQP_STATUS_CONNECTION_CLOSED;
-      printf(" Changed to AMQP_STATUS_OK\n");
-            ret = AMQP_STATUS_OK;
+    ret = AMQP_STATUS_CONNECTION_CLOSED;
   }
 
   return ret;
