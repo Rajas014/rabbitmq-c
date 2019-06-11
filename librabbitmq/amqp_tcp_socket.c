@@ -124,7 +124,6 @@ start:
 
 static ssize_t amqp_tcp_socket_recv(void *base, void *buf, size_t len,
                                     int flags) {
-  printf(" ** i have entered into amqp_tcp_socket_recv\n");
   struct amqp_tcp_socket_t *self = (struct amqp_tcp_socket_t *)base;
   ssize_t ret;
   if (-1 == self->sockfd) {
